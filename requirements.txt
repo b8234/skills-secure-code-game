@@ -4,3 +4,4 @@ flask
 flask-testing
 blinker
 requests
+python-dotenv

@@ -1,0 +1,13 @@
+{
+  "name": "level-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "vitest": "^1.6.1"
+  }
+}

@@ -9,7 +9,7 @@
 // first, and then run the tests' file:
 // $ npm install Season-2/Level-3/ && npm install --global mocha
 
-const app = require("./code");
+const app = require("./vulnerable_code");
 // const app = require("./solution"); // To test the solution, uncomment this line and comment the one above
 const request = require('supertest');
 const { expect } = require('chai');

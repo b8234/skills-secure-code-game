@@ -10,7 +10,7 @@
 # it's not necessary to run both files in parallel as the tests
 # initialize a new environment, similar to code.py
 
-from code import app, get_planet_info
+from secure_code import app, get_planet_info
 import unittest
 from flask_testing import TestCase
 

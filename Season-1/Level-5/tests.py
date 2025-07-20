@@ -1,5 +1,5 @@
 import unittest
-import code as c
+import vulnerable_code as c
 
 class TestCrypto(unittest.TestCase): 
   

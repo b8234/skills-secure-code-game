@@ -5,7 +5,7 @@
 // Run them by opening a terminal and running the following:
 // $ make -B Season-1/Level-2/tests && ./Season-1/Level-2/tests
 
-#include "code.h"
+#include "secure_code.h"
 
 int main() {
     printf("Level 2 \n\n");
