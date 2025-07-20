@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "vitest",
-    "test:Level-1": "vitest run Level-1",
+    "test:Level-1": "vitest run code.spec.js",
     "check:Level-1": "node .utils/check.js 1",
     "test:Level-2": "vitest run Level-2",
     "check:Level-2": "node .utils/check.js 2",
