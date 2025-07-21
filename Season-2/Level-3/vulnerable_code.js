@@ -47,11 +47,16 @@ app.post("/ufo", (req, res) => {
 
   if (contentType === "application/xml") {
     try {
-      // Prevent XXE and entity expansion
+      // 🚨 Block all XMLs with DOCTYPE declarations to stop XXE
+      if (/<!DOCTYPE/i.test(req.body)) {
+        return res.status(400).send("Invalid XML: DOCTYPE is not allowed.");
+      }
+
+      // Prevent entity expansion and external access
       const xmlDoc = libxmljs.parseXml(req.body, {
         replaceEntities: false,
         recover: true,
-        nonet: true, // prevent external access
+        nonet: true,
       });
 
       console.log("Received XML data:", xmlDoc.toString());
@@ -66,7 +71,6 @@ app.post("/ufo", (req, res) => {
           }
         });
 
-      // Removed risky command execution path
       return res
         .status(200)
         .set("Content-Type", "text/plain")
