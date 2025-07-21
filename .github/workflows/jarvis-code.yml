@@ -27,6 +27,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check GitHub Status
-        run: |
-          echo "Hello, Jarvis!"
-          curl -s https://www.githubstatus.com/api/v2/status.json | grep '"description"' | head -1
+        run: echo "Hello, Jarvis! GitHub status check is not required in this workflow."
