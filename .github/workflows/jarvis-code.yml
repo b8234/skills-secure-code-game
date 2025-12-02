@@ -24,7 +24,7 @@ jobs:
       contents: read
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Check GitHub Status
         run: echo "Hello, Jarvis! GitHub status check is not required in this workflow."
